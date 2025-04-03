@@ -10,6 +10,81 @@ body {
     box-sizing: border-box;
 }
 
+.home-container {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.lesson-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.lesson-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.lesson-card h2 {
+    color: #2c3e50;
+    margin: 0 0 1rem 0;
+}
+
+.lesson-card p {
+    color: #666;
+    margin: 0 0 1.5rem 0;
+}
+
+.start-btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.lesson-card:hover .start-btn {
+    background: #2980b9;
+}
+
+.lesson-header {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+.back-btn:hover {
+    background: #2980b9;
+}
+
 h1 {
     color: #333;
     margin-bottom: 20px;

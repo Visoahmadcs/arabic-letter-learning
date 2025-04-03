@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Letter Learning - Lesson 1</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="lesson-header">
+        <a href="index.html" class="back-btn">← Back to Home</a>
+        <h1>Lesson 1: Basic Letter Forms</h1>
+    </div>
+    
+    <div class="instructions">
+        <p>👋 Welcome to Arabic Letter Learning!</p>
+        <p>🎯 Your Goal: Find all forms of the displayed letter</p>
+        <ul>
+            <li>Look at the letter shown in the box above</li>
+            <li>Find its matching forms in each column</li>
+            <li>Click on the correct forms to mark them</li>
+            <li>Find all 4 forms to complete the challenge</li>
+        </ul>
+        <p>✨ When you succeed, click "Start New" for another letter!</p>
+    </div>
+    
+    <div class="selected-letter-display" id="selected-letter-display">
+        <div>Currently selected letter:</div>
+        <div class="selected-letter" id="selected-letter">-</div>
+        <div id="selected-letter-name">Click on any letter to begin</div>
+    </div>
+    
+    <div class="game-container">
+        <div class="strips-container" id="strips-container">
+            <!-- Strips will be added here by JavaScript -->
+        </div>
+        
+        <div class="controls">
+            <button id="reset-btn">Reset Position</button>
+            <button id="next-btn">Next Letter</button>
+        </div>
+    </div>
+    
+    <script src="static/script.js"></script>
+</body>
+</html>
