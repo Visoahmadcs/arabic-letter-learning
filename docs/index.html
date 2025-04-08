@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arabic Letter Learning</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="container">
+    <div class="home-container">
         <h1>Arabic Letter Learning</h1>
-        <div class="lesson-links">
-            <a href="lesson1.html" class="lesson-link">Lesson 1: Basic Letter Forms</a>
-            <a href="lesson2.html" class="lesson-link">Lesson 2: Find the Letter</a>
+        <div class="lessons-grid">
+            <a href="{{ url_for('lesson', lesson_id=1) }}" class="lesson-card">
+                <h2>Lesson 1</h2>
+                <p>Basic Letter Forms</p>
+                <span class="start-btn">Start Learning</span>
+            </a>
+            <a href="{{ url_for('lesson', lesson_id=2) }}" class="lesson-card">
+                <h2>Lesson 2</h2>
+                <p>Coming Soon</p>
+                <span class="start-btn">Coming Soon</span>
+            </a>
         </div>
     </div>
 </body>
