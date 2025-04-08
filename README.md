@@ -1,14 +1,19 @@
 # Arabic Letter Learning
 
-An interactive web application for learning Arabic letters in their different forms. This application helps users understand how Arabic letters change their shape depending on their position in a word.
+An interactive web application for learning Arabic letters through two engaging lessons: Basic Letter Forms and Pattern Matching.
 
 ## Features
 
-- Interactive scrolling strips showing different forms of Arabic letters
-- Visual alignment guide
-- Letter selection and highlighting
-- Responsive design
+### Lesson 1: Basic Letter Forms
+- Interactive display of Arabic letters in different positions
+- Visual alignment guide for better understanding
 - Easy navigation with Next and Reset buttons
+
+### Lesson 2: Pattern Matching
+- Find the target Arabic letter in a 3x3 grid
+- Instant feedback on correct/incorrect selections
+- Progressive learning with randomized letter placement
+- Clean and intuitive interface
 
 ## Installation
 
@@ -30,7 +35,7 @@ The application will be available at `http://localhost:5000`
 
 ## Deployment
 
-This application can be deployed to platforms like Heroku or Netlify. The necessary files (Procfile, requirements.txt) are included.
+This application is deployed using GitHub Pages and can be accessed at [https://visoahmadcs.github.io/arabic-letter-learning](https://visoahmadcs.github.io/arabic-letter-learning).
 
 ## Technologies Used
 
