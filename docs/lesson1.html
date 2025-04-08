@@ -3,21 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Letter Forms - Arabic Letter Learning</title>
+    <title>Arabic Letter Learning - Scrolling Strips</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Basic Letter Forms</h1>
-        <div class="lesson-content">
-            <!-- Content will be added dynamically -->
+    <h1>Arabic Letter Learning</h1>
+    
+    <div class="instructions">
+        Scroll each strip to align the same letter in different forms. 
+        Click on any letter to see all forms of that letter aligned together.
+    </div>
+    
+    <div class="selected-letter-display" id="selected-letter-display">
+        <div>Currently selected letter:</div>
+        <div class="selected-letter" id="selected-letter">-</div>
+        <div id="selected-letter-name">Click on any letter to begin</div>
+    </div>
+    
+    <div class="game-container">
+        <div class="strips-container" id="strips-container">
+            <!-- Strips will be added here by JavaScript -->
         </div>
+        
         <div class="controls">
-            <button id="prev-btn" class="btn">Previous</button>
-            <button id="next-btn" class="btn">Next</button>
-            <button id="reset-btn" class="btn">Reset</button>
+            <button id="reset-btn" class="btn">Reset Position</button>
+            <button id="next-btn" class="btn">Next Letter</button>
         </div>
     </div>
-    <script src="lesson1.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
